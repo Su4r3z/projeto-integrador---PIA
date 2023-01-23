@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    transition:0.5s
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+
+header {
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    background-color:rgb(81,81,81);
+    height: 100px;  
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
+
+    width: 100%;
+    text-align: right;
+    padding: 40px;
+
+}
+
+.menu a { 
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition:0.5s;
+}
+
+.menu a:hover {
+    color: #f64;
+    transition:0.5s;
+}
+
+/* Title */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/pequeno-graffiti.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    
+}
+.title h2 {
+    margin-top:  270px;
+    line-height: 100px;
+    font-weight: bolder;
+    font-size: 80px;
+    color: #fff;
+}
+
+.title h3 {
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(51, 50, 50);
+
+    /* Corpo */
+
+}
+.txt-corpo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 50, 50);
+    align-items: center;
+    justify-items: center;
+
+}   
+.txt-corpo h3  {
+    margin-top: 80px;
+    font-size: 30px;
+    color: #f64;
+
+}
+.txt-corpo p {
+    margin-top: 25px;
+    max-width: 1280px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+.txt-corpo span {
+    margin-top: 30px;
+    width: 90px;
+    border: 1px solid #f64;
+    border-radius: 10px;
+}
+
+/* Diferencial */
+
+.back {
+    background-color: rgb(51, 50, 50);
+}
+.diferencial {
+    background-color: rgb(51, 50, 50);
+    display: flex;
+    width: 920px;
+    margin-left: 500px;
+    color: #fff;
+}
+.line {
+    margin: 20px;
+    text-align: justify;
+}
+.line img {
+    margin-top: 10px;
+    height: 70px;
+}
+.line h4 {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #f64;
+    line-height: 50px;
+}
+
+/* Sobre Nós */
+
+.sobre-nos {
+    background-color: rgb(51, 50, 50);
+    display: flex;
+}
+.sobre-nos img {
+    margin:2%;
+    justify-content: flex-start;
+    border-radius: 50px;
+    height: 50%;
+    width: 50%;
+}
+.text-sobre-nos {
+    justify-content: flex-end;
+}
+.text-sobre-nos h4 {
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #f64;
+}
+.text-sobre-nos p {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+#text {
+    margin: 60px 100px 0px 100px;
+}
+
+.break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 300px;
+    background-color: rgb(51, 50, 50);
+}
+.decoration {
+    display: flex;
+    justify-content: center;
+    color: #f64;
+    font-size: 1px;
+    height: 5px;
+    border-radius: 50px;
+    width: 100px;
+    background-color:#f64
+}
+/* Contato */
+
+#form {
+    background-color: rgb(51, 50, 50);
+}
+
+.txt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-form h4 {
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #f64;
+}
+
+.txt-form p {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size:18px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.form-group {
+    width:30%;
+    margin: 20px 0px;
+    position: relative;
+}
+.form-group label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: #fff;
+    transition:all 0.2s;
+    cursor:text;
+}
+.form-group .input:focus ~ label,
+.form-group .input:valid ~ label{
+    transform: translatey(-24px);
+    font-size: 12px;
+    color: #f64;
+}
+.input {
+    width: 100%;
+    background-color: rgb(51, 50, 50);
+    border: 0;
+    border-bottom: 2px solid #f64;
+    outline: none;
+}
+.form-group-text {
+    width: 100%;
+    margin: 20px 30px;
+    position: relative;
+}
+.form-group-text label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: #fff;
+    transition:all 0.2s;
+    cursor:text;
+}
+.form-group-text .input:focus ~ label,
+.form-group-text .input:valid ~ label{
+    transform: translatey(-24px);
+    font-size: 12px;
+    color: #f64;
+    
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+    width: 100%;
+}
+.button input {
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #f64;
+    transition: 1s;
+}
+.button input:hover {
+    border: 1px solid #000;
+    color: #000;
+    transition: 1s;
+}
+
+.footer {
+    background-color: rgb(81,81,81);
+    width: 100%;
+}
+.container-rodape {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 23%;
+    margin-right: 2%;
+    color: #fff;
+}
+
+.box a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+    transition: 0.4s;
+}
+.box p {
+    line-height: 25px;
+    font-size:14px;
+}
+.box h3 {
+    margin: 2%;
+    font-size: 25px;
+    color: #f64;
+}
+.box-icon {
+    width: 100%;
+    text-align: center;
+}
+.box .icon {
+    display: inline-block;
+    text-align: center;
+    margin-right: 3%;
+    font-size: 30px;
+    transition: 0.4s;
+}
+.box  a:hover {
+    color: #f64;
+    transition: 0.4s;
+}
+.copy {
+    background-color: rgb(51, 50, 50);
+    height: 50px;
+    display:flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .txt-corpo p {
+        font-weight: 500;
+        width: 100%;
+        line-height:25px;
+        text-align:justify;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1512px) {
+    .diferencial {
+        width:100%;
+        padding: 20px;
+        margin-left:0;
+    }
+    .line img {
+        margin-top: 10px;
+        height: 50px;
+    }
+    .line h4 { 
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .sobre-nos {
+        flex-wrap: wrap;
+    }
+    .sobre-nos img {
+        border-radius: 50px;
+        height: 95%;
+        width:95%;
+    }
+    .text-sobre-nos p {
+        padding: 0px;
+        line-height:30px;
+        text-align:justify;
+    }
+}
+
+@media (max-width:1000px) {
+    .box {
+        width: 40%;
+        margin-left: 5%;
+        
+    }
+}
